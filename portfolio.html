@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--CSS Styles -->
+        <link rel="stylesheet" href="styleportfolio.css" />
+        <!-- Animate CSS CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <title>S.P.Shreeyas | Portfolio</title>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav>
+            <h1>S.P.Shreeyas</h1>
+            <ul class="navigation">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#social" class="nav-link">Social</a></li>
+            </ul>
+            <button class="burger-menu" id="burger-menu">
+                <ion-icon class="bars" name="menu-outline"></ion-icon>
+            </button>
+        </nav>
+        <!-- Hero Section -->
+        <section class="hero" id="about">
+            <img src="C:\Users\shree\Desktop\visual studio\hero.png" alt="S.P.Shreeyas" loading="lazy" class="hero-img" />
+            <div class="bio animate__animated animate__shakeX">
+                <h2 class="bio-title">About Me</h2>
+                <p class="bio-text">
+                    Hi there! I am Shreeyas! I am an enthusiastic student with highly motivated and leadership skills currently pursuing my B.Tech degree in Computer Science from VIT-Vellore.I have excellent communication skills, verbal as
+                    well as written, coupled with exceptional presentation skills along with strong Analytical skills & Problem-solving abilities. My areas of interest are Technical Writing, Graphic Design, and Front end development.
+                    Willingness to learn new things is what drives me ahead.
+                </p>
+            </div>
+        </section>
+        <!-- Skills section -->
+        <section class="skills" id="skills">
+            <h2 class="skill-header">My Top Skills</h2>
+
+            <div class="skills-wrapper">
+                <div class="first-set animate__animated animate__pulse">
+                    <img src="https://cdn.dribbble.com/users/66221/screenshots/1655593/html5.png" alt="html" loading="lazy" class="icon icon-card" />
+                    <img src="https://www.101computing.net/wp/wp-content/uploads/python-logo-1.png" alt="python" loading="lazy" class="icon icon-card" />
+                    <img src="https://www.kindpng.com/picc/m/464-4640184_css3-png-download-css-icon-transparent-png.png" alt="css" loading="lazy" class="icon icon-card" />
+                </div>
+
+                <div class="second-set animate__animated animate__pulse">
+                    <img src="https://www.kindpng.com/picc/m/67-678384_transparent-javascript-icon-png-png-download.png" alt="javascript" loading="lazy" class="icon icon-card" />
+                    <img src="https://icon-library.com/images/java-icon-images/java-icon-images-6.jpg" alt="java" loading="lazy" class="icon icon-card" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1024px-Git_icon.svg.png" alt="git" loading="lazy" class="icon icon-card" />
+                </div>
+            </div>
+        </section>
+        <!-- Contact section -->
+        <section class="contact" id="contact">
+            <h2>Get In Touch With Me</h2>
+            <div class="contact-form-container">
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/xyylngw" method="POST">
+                        <div class="form-control">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field" required />
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field" required />
+                        </div>
+                        <div class="form-control">
+                            <label for="message">Message</label>
+                            <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message" class="input-field" required></textarea>
+                        </div>
+                        <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Social accounts -->
+        <div class="socials" id="social">
+            <a href="https://twitter.com/Shreeyas_99" target="_blank">
+                <img src="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/brand-download-img-1.jpg.twimg.1920.jpg" alt="Twitter" loading="lazy" class="socicon" />
+            </a>
+            <a href="https://www.instagram.com/shreeyas_99/" target="_blank">
+                <img src="https://helios-i.mashable.com/imagery/articles/05ayESsjTP2NcNBTuDsWnfu/hero-image.fill.size_1248x702.v1611609265.png" alt="Instagram" loading="lazy" class="socicon" />
+            </a>
+            <a href="https://www.linkedin.com/in/shreeyas-sambandan-prabakaran-67895b18b/" target="_blank">
+                <img src="https://cliply.co/wp-content/uploads/2021/02/372102050_LINKEDIN_ICON_400px.gif" alt="Linkedin" loading="lazy" class="socicon" />
+            </a>
+            <a href="https://github.com/Shreeyassp" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" alt="Github" class="socicon" /></a>
+            <br />
+            <!-- Scroll to top -->
+            <i class="scroll-up" id="scroll-up"><img src="https://collectibledry.com/wp-content/uploads/2016/06/scrollup.png" class="up-arrow" alt="scroll-up" /></i>
+        </div>
+        <!-- Footer section -->
+        <footer>
+            <p class="copy">&copy; Copyright 2021</p>
+            <p class="copy">
+                Built with &#x2661; by
+                <a href="https://twitter.com/Shreeyas_99" target="_blank">S.P.Shreeyas</a>
+            </p>
+        </footer>
+        <script>
+            // scroll to top functionality
+            const scrollUp = document.querySelector("#scroll-up");
+            scrollUp.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                });
+            });
+        </script>
+        <script>
+            const burger = document.querySelector("#burger-menu");
+            const ul = document.querySelector("nav ul");
+            const nav = document.querySelector("nav");
+            burger.addEventListener("click", () => {
+                ul.classList.toggle("show");
+            });
+            const navLink = document.querySelectorAll(".nav-link");
+            navLink.forEach((link) =>
+                link.addEventListener("click", () => {
+                    ul.classList.remove("show");
+                })
+            );
+        </script>
+        <!-- Website scripts -->
+        <script src="assets/js/app.js"></script>
+        <!-- Ion icons scripts -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
