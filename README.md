@@ -1,2 +1,2 @@
 Personal Portfolio
-https://shreeyassp.github.io/
+https://shreeyassp.github.io/portfolio/
